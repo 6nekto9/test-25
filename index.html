@@ -12,3 +12,34 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
+  
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://i.pinimg.com/236x/63/37/41/633741d6b5979ac178902920c7fa7cca.jpg"></div>
+      <div class="swiper-slide"><img src="https://i.pinimg.com/736x/45/5d/ab/455dab8089f7ceb9f63a41ab1cbc26b2.jpg"></div> 
+      <div class="swiper-slide"><img src="https://i.pinimg.com/736x/e5/56/70/e55670b990e9d4b642e675e71bcc41af.jpg"></div> 
+      <div class="swiper-slide"><img src="https://i.pinimg.com/736x/46/5c/69/465c692a7c4f06259fbebf5454ac53cd.jpg"></div>  
+      <div class="swiper-slide"><img src="https://i.pinimg.com/736x/09/37/76/0937769c54afd6976991bb5da6532f4f.jpg"></div>  
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+</html>
+  
